@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+.page {
+	height: 757px;
+	width: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	background-image: url('img/back.jpg');
+	background-position: center;
+	background-size: cover;
+}
+
+.main_container {
+	height: 750px;
+	width: 1300px;
+	margin: 1px auto;
+	border: 2px solid white;
+}
+
+.main_img_container {
+	left: 0;
+	top: 0;
+	height: 750px;
+	width: 1300px;
+}
+
+.main_img {
+	min-height: 750px;
+	max-width: 1300px;
+}
+
+.name_of_img_block {
+	height: 100px;
+	width: 1300px;
+	position: absolute;
+	top: 650px;
+	margin-left: 0;
+	background: rgba(0, 0, 0, .7);
+}
+
+.name_of_jpg {
+	font-size: 60px;
+	color: white;
+	font-family: 'Oswald', sans-serif;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.img_container {
+	height: 400px;
+	width: 1300px;
+	position: absolute;
+	top: 450px;
+	left: 0;
+	display: none;
+}
+
+.images_blocks {
+	height: 90px;
+	width: 150px;
+	margin-top: 3.5px;
+	margin-left: 9.75px;
+	display: inline-block;
+	cursor: pointer;
+	transition: .6s;
+	-o-transition: .6s;
+	-mozila-transition: .6s;
+	-webkit-transition: .6s;
+	border: 1px solid white;
+	display: none;
+}
+
+.images_blocks:hover {
+	transform: scale(1.1);
+}
+
+.images {
+	height: 90px;
+	max-width: 150px;
+}
+
+.blocks {
+	height: 75px;
+	width: 75px;
+	position: absolute;
+	top: 325px;
+	cursor: pointer;
+	background: rgba(0, 0, 0, .8);
+	z-index: 4;
+	transition: .4s;
+	-o-transition: .4s;
+	-webkit-transition: .4s;
+	-mozila-transition: .4s;
+}
+
+.blocks:hover {
+     background: rgba(0, 0, 0, .6);
+}
+
+.left_button {
+	margin-left: 0;
+	display: none;
+}
+
+.right_button {
+	margin-left: 1225px;
+}
+
+.left_button:hover {
+    transform: translateX(20px);
+}
+
+.right_button:hover {
+    transform: translateX(-20px);
+}
+
+.left_button.show_left {
+	display: block;
+}
+
+.right_button.hide_right {
+	display: none;
+}
+
+.arrows {
+	font-size: 55px;
+	color: white;
+	margin: 7.5px auto;
+	margin-left: 10px;
+}
